@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+   <title>Ratala Architecture</title>
+   <meta content="" name="description">
+   <meta content="" name="keywords">
+   <!-- Favicons -->
+   <link href="jpg2.jpg" rel="icon">
+   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+   <!-- Google Fonts -->
+   <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
+      rel="stylesheet">
+   <!-- Vendor CSS Files -->
+   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+   <!-- Template Main CSS File -->
+   <link href="assets/css/style.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+   <link rel="stylesheet" type="text/css" href=" https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+   <!-- =======================================================
+         * Template Name: eBusiness - v4.6.0
+         * Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
+         * Author: BootstrapMade.com
+         * License: https://bootstrapmade.com/license/
+         
+         ======================================================== -->
+   <style type="text/css">
+      .slick span {  
+         display: block;
+         height: 350px;
+         position: relative;
+         text-align: center;
+         transform: translate(0, 0) scale(.4);
+         transition: all .4s ease;
+         box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.40);
+      }
+
+      .slick span:hover {
+         box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+         -webkit-transition: all 0.2s ease-in;
+         -moz-transition: all 0.2s ease-in;
+         -ms-transition: all 0.2s ease-in;
+         -o-transition: all 0.2s ease-in;
+         transition: all 0.2s ease-in;
+         margin-top: 20px;
+         transform: scale(1.05);
+      }
+
+      .slick-slide {
+         border: solid 1px white;
+         height: 390px;
+      }
+
+      .slick-slide img {
+         height: 350px;
+         width: 100%
+      }
+
+      .slick-slide.lt2 span {
+         transform: translate(10%, 0) scale(.6);
+      }
+
+      .slick-slide.lt1 span {
+         opacity: .7;
+         transform: translate(5%, 0) scale(.8);
+      }
+
+      .slick-slide.gt1 span {
+         opacity: .7;
+         transform: translate(-5%, 0) scale(.8);
+      }
+
+      .slick-slide.gt2 span {
+         transform: translate(-10%, 0) scale(.6);
+      }
+
+      .slick-slide.slick-center span {
+         z-index: 1;
+         transform: scale(1);
+         opacity: 1;
+         color: #e67e22;
+      }
+
+      .slick-prev,
+      .slick-next {
+         position: absolute;
+         top: 50%;
+         appearance: none;
+         margin-top: -10px;
+         padding: 0;
+         border: 0;
+         background: none;
+         cursor: pointer;
+         color: transparent;
+         outline: none;
+         z-index: 100;
+      }
+
+      .slick-prev {
+         width: 0;
+         height: 0;
+         border-style: solid;
+         border-width: 15px 15px 15px 0;
+         border-color: transparent #007bff transparent transparent;
+         left: 0;
+      }
+
+      .slick-next {
+         width: 0;
+         height: 0;
+         border-style: solid;
+         border-width: 15px 0 15px 15px;
+         border-color: transparent transparent transparent #007bff;
+         right: 0;
+      }
+   </style>
+</head>
+
+<body>
+   <!-- ======= Header ======= -->
+   <header id="header" class="fixed-top d-flex align-items-center">
+      <div class="container d-flex justify-content-between">
+         <div class="logo">
+            <!--<a href="index.html"><img src="png.png" alt=""></a>-->
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <a href="index.html"><img src="png.png" alt="" class="img-fluid"></a>
+         </div>
+         <nav id="navbar" class="navbar">
+            <ul>
+               <li><a class="nav-link scrollto active" href="#hero"><b>Home</b></a></li>
+               <li><a class="nav-link scrollto" href="#about"><b>About Us</b></a></li>
+               <li class="dropdown">
+                  <a class="nav-link scrollto" href="#services"><span><b>Services</b></span> <i
+                        class="bi bi-chevron-down"></i></a>
+                  <ul>
+                     <li><a href="#">Achitect</a></li>
+                     <li><a href="#">Interior 3</a></li>
+                     <li><a href="#">Smart Home</a></li>
+                  </ul>
+               </li>
+               <li><a class="nav-link scrollto" href="#portfolio"><b>Portofolio</b></a></li>
+               <!-- <li><a class="nav-link scrollto" href="#team"><b>Team</b></a></li> -->
+               <li><a class="nav-link scrollto" href="#contact"><b>Contact</b></a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+         </nav>
+         <!-- .navbar -->
+      </div>
+   </header>
+   <!-- End Header -->
+   <!-- ======= hero Section ======= -->
+   <section id="hero">
+      <div class="hero-container">
+         <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+            <div class="carousel-inner" role="listbox">
+               <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/1.jpg)">
+                  <div class="carousel-container">
+                     <div class="container">
+                        <h2 class="animate__animated animate__fadeInDown">The Best Interior work in Town </h2>
+                        <p class="animate__animated animate__fadeInUp">We're In The Business Of Making your sweet dream
+                           home
+                        </p>
+                        <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get
+                           Started</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/2.jpg)">
+                  <div class="carousel-container">
+                     <div class="container">
+                        <h2 class="animate__animated animate__fadeInDown">Ratala Architecture solution</h2>
+                        <p class="animate__animated animate__fadeInUp">Helping Business Security & Peace of Mind for
+                           Your Family
+                        </p>
+                        <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get
+                           Started</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/3.jpg)">
+                  <div class="carousel-container">
+                     <div class="container">
+                        <h2 class="animate__animated animate__fadeInDown">Now you’re thinking… Together we create!</h2>
+                        <p class="animate__animated animate__fadeInUp">
+                           Your home is your greatest investment, make it last!
+                           Custom homes with timeless elegance
+                           Perfect interiors never go out of style
+                        </p>
+                        <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get
+                           Started</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+               <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+            </a>
+         </div>
+      </div>
+   </section>
+   <!-- End Hero Section -->
+   <main id="main">
+      <!-- ======= About Section ======= -->
+      <div id="about" class="about-area area-padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="section-headline text-center">
+                     <h2>About Us</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <!-- single-well start-->
+               <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="well-left">
+                     <div class="single-well">
+                        <a href="#">
+                           <img src="about.jpg" alt="">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <!-- single-well end-->
+               <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="well-middle">
+                     <div class="single-well">
+                        <a href="#">
+                           <h4 class="sec-head">project Maintenance</h4>
+                        </a>
+                        <p>
+                           Services provided include preventive maintenance, emergency repairs, scheduled servicing, testing and component replacements, and the operation of building mechanical and electrical systems. There are a number of different arrangements for providing maintenance services.
+                        </p>
+                        <ul>
+                           <li>
+                              <i class="bi bi-check"></i> Interior design Package
+                           </li>
+                           <li>
+                              <i class="bi bi-check"></i> Building House
+                           </li>
+                           <li>
+                              <i class="bi bi-check"></i> Smart Home Security
+                           </li>
+                           <li>
+                              <i class="bi bi-check"></i> Renovaion of Commercial Office
+                           </li>
+                           <li>
+                              <i class="bi bi-check"></i> Make Quality Products
+                           </li>
+                           <li>
+                              <i class="bi bi-check"></i> CCTV Installation
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- End col-->0
+            </div>
+         </div>
+      </div>
+      <!-- End About Section -->
+      <!-- ======= Services Section ======= -->
+      <div id="services" class="services-area area-padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="section-headline services-head text-center">
+                     <h2>Our Services</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row text-center">
+               <!-- Start Left services -->
+               <!-- Topic Cards -->
+               <div id="cards_landscape_wrap-2">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 crd">
+                           <a href="">
+                              <div class="card-flyer">
+                                 <div class="text-box">
+                                    <div class="image-box">
+                                       <img src="architect.jpg" alt="" />
+                                    </div>
+                                    <div class="text-container">
+                                       <h6>Architect</h6>
+                                       <p>will have to make sure the prototype looks finished by inserting text or
+                                          photo.make sure the prototype looks finished by.</p>
+                                       <a href="#" class="btn btn-primary mt-2">Read More</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 crd">
+                           <a href="">
+                              <div class="card-flyer">
+                                 <div class="text-box">
+                                    <div class="image-box">
+                                       <img src="i.jpg" alt="" />
+                                    </div>
+                                    <div class="text-container">
+                                       <h6>Interior Design</h6>
+                                       <p>We design a well and fabulous design and provide a good quality with according
+                                          to you plan..</p>
+                                       <a href="#" class="btn btn-primary mt-2">Read More</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 crd">
+                           <a href="">
+                              <div class="card-flyer">
+                                 <div class="text-box">
+                                    <div class="image-box">
+                                       <img src="smart.png" alt="" />
+                                    </div>
+                                    <div class="text-container">
+                                       <h6>Smart Home</h6>
+                                       <p>We also provide installation of security cameras with quality and helps in
+                                          your infrastructure security.</p>
+                                       <a href="#" class="btn btn-primary mt-2">Read More</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Services Section -->
+      <!-- ======= Team Section ======= -->
+      <!-- <div id="team" class="our-team-area area-padding"> -->
+      <!--  <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="section-headline text-center">
+                  <h2>Our special Team</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="single-team-member">
+                  <div class="team-img">
+                    <a href="#">
+                      <img src="assets/img/team/1.jpg" alt="">
+                    </a>
+                    <div class="team-social-icon text-center">
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <i class="bi bi-facebook"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="bi bi-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="bi bi-instagram"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="team-content text-center">
+                    <h4>Deepak Raj Ratala</h4>
+                    <p> Ceo & Founder</p>
+                  </div>
+                </div>
+              </div> -->
+      <!-- End column -->
+      <!-- <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div class="team-img">
+                <a href="#">
+                  <img src="assets/img/team/2.jpg" alt="">
+                </a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-content text-center">
+                <h4>Subash Ratala</h4>
+                <p>Co-founder</p>
+              </div>
+            </div>
+            </div> -->
+      <!-- End column -->
+      <!-- <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div class="team-img">
+                <a href="#">
+                  <img src="assets/img/team/3.jpg" alt="">
+                </a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-content text-center">
+                <h4>Lellien Linda</h4>
+                <p>Web Design</p>
+              </div>
+            </div>
+            </div> -->
+      <!-- End column -->
+      <!-- <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div class="team-img">
+                <a href="#">
+                  <img src="assets/img/team/4.jpg" alt="">
+                </a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-content text-center">
+                <h4>Tekendra nayak</h4>
+                <p>IT Expert</p>
+              </div>
+            </div>
+            </div> -->
+      <!-- End column -->
+      <!-- </div>
+            </div>
+            </div> -->
+      <!-- End Team Section -->
+      <!-- ======= Rviews Section ======= -->
+      <div class="reviews-area">
+         <div class="row g-0">
+            <div class="col-lg-6">
+               <img src="assets/img/about/2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 work-right-text d-flex align-items-center">
+               <div class="px-5 py-5 py-lg-0">
+                  <h2>working with us</h2>
+                  <h5>Web Design, Ready Home, Construction and Co-operate Outstanding Buildings.</h5>
+                  <a href="#contact" class="ready-btn scrollto">Contact us</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Rviews Section -->
+      <!-- ======= Portfolio Section ======= -->
+    <div id="portfolio" class="portfolio-area area-padding fix">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="section-headline text-center">
+                     <h2>Our Portfolio</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="slick">
+               <div><span><a class="popup-youtube" href="video1.mp4"><img src="smart.png"></a></span></div>
+               <div><span><a class="popup-youtube" href="video2.mp4"><img src="architect.jpg"></a></span></div>
+               <div><span><a class="popup-youtube" href="video3.mp4"><img src="a.jpg"></a></span></div>
+               <div><span><a class="popup-youtube" href="video1.mp4"><img src="smart.png"></a></span></div>
+               <div><span><a class="popup-youtube" href="video2.mp4"><img src="architect.jpg"></a></span></div>
+               <div><span><a class="popup-youtube" href="video3.mp4"><img src="a.jpg"></a></span></div>
+            </div>
+
+            <!--    <div class="all">
+                  <div class="swiper-container videoswiper noselect">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="width:312px">
+                           <div class="swiper-card">
+                              <div class="card-img" >
+                                 <a href="video1.mp4">
+                                    <video controls="controls" autoplay="autoplay">
+                                       <source src="video1.mp4" type="" >
+                                    </video>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide" style="width:312px">
+                           <div class="swiper-card">
+                              <div class="card-img">
+                                 <a href="video2.mp4">
+                                    <video controls="controls" autoplay="autoplay">
+                                       <source src="video2.mp4" type="" >
+                                    </video>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide" style="width:312px">
+                           <div class="swiper-card">
+                              <div class="card-img">
+                                 <a href="video3.mp4">
+                                    <video controls="controls" autoplay="autoplay">
+                                       <source src="video3.mp4" type="" >
+                                    </video>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide" style="width:312px">
+                           <div class="swiper-card">
+                              <div class="card-img">
+                                 <a href="video1.mp4">
+                                    <video controls="controls" autoplay="autoplay">
+                                       <source src="video1.mp4" type="" >
+                                    </video>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide" style="width:312px">
+                           <div class="swiper-card">
+                              <div class="card-img">
+                                 <a href="video2.mp4">
+                                    <video controls="controls" autoplay="autoplay">
+                                       <source src="video2.mp4" type="" >
+                                    </video>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide" style="width:312px">
+                           <div class="swiper-card">
+                              <div class="card-img">
+                                 <a href="video3.mp4">
+                                    <video controls="controls" autoplay="autoplay">
+                                       <source src="video3.mp4" type="" >
+                                    </video>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-button-prev"></div>
+                     <div class="swiper-button-next"></div>
+                  </div>
+               </div> -->
+         </div>
+      </div>
+      </div><!-- End Portfolio Section -->
+      <!-- ======= Testimonials Section ======= -->
+      <div class="row">
+         <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+               <h2>testimonials</h2>
+            </div>
+         </div>
+      </div>
+
+      <div id="testimonials" class="testimonials">
+         <div class="container">
+
+
+            <div class="testimonials-slider swiper">
+               <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                     <div class="testimonial-item">
+                        <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                        <h3>Deepak Raj Ratala</h3>
+                        <h4>Ceo &amp; Founder</h4>
+                        <p>
+                           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                           “Success is not final; failure is not fatal: it is the courage to continue that counts.” .
+                           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                     </div>
+                  </div><!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                     <div class="testimonial-item">
+                        <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt=""
+                           width="200px" height="100px">
+                        <h3>Jasmika Lohani</h3>
+                        <h4>Designer</h4>
+                        <p>
+                           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                           “Every problem is a gift—without problems we would not grow.”
+                           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                     </div>
+                  </div><!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                     <div class="testimonial-item">
+                        <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                        <h3>Riya</h3>
+                        <h4>Developer</h4>
+                        <p>
+                           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                           If you're just creative, you'll always have to rely on technical people. If you're creative and technical, you're unstoppable.
+                           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                     </div>
+                  </div><!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                     <div class="testimonial-item">
+                        <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                        <h3>Yagay Raj</h3>
+                        <h4>Developer</h4>
+                        <p>
+                           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                           Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.
+                           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                     </div>
+                  </div><!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                     <div class="testimonial-item">
+                        <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                        <h3>John Larson</h3>
+                        <h4>Entrepreneur</h4>
+                        <p>
+                           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                           Every time you state what you want or believe, you're the first to hear it.
+                           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                     </div>
+                  </div><!-- End testimonial item -->
+
+               </div>
+               <div class="swiper-pagination"></div>
+            </div>
+
+         </div>
+      </div><!-- End Testimonials Section -->
+
+
+
+      <!-- ======= Suscribe Section ======= -->
+      <div class="suscribe-area">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
+                  <div class="suscribe-text text-center">
+                     <h3>Welcome to our Business company</h3>
+                     <a class="sus-btn" href="#">Get A quote</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Suscribe Section -->
+      <!-- ======= Contact Section ======= -->
+      <div id="contact" class="contact-area">
+         <div class="contact-inner area-padding">
+            <div class="contact-overly"></div>
+            <div class="container ">
+               <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                     <div class="section-headline text-center">
+                        <h2>Contact us</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <!-- Start contact icon column -->
+                  <div class="col-md-4">
+                     <div class="contact-icon text-center">
+                        <div class="single-icon">
+                           <i class="bi bi-phone"></i>
+                           <p>
+                              Call: +9779863479501 <br>
+                              <span>Monday-Friday (9am-5pm)</span>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Start contact icon column -->
+                  <div class="col-md-4">
+                     <div class="contact-icon text-center">
+                        <div class="single-icon">
+                           <i class="bi bi-envelope"></i>
+                           <p>
+                              Email: ratala.architecture98@gmail.com<br>
+                              <span>Web: ratalaarchitecture.com</span>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Start contact icon column -->
+                  <div class="col-md-4">
+                     <div class="contact-icon text-center">
+                        <div class="single-icon">
+                           <i class="bi bi-geo-alt"></i>
+                           <p>
+                              Location: Kirtipur<br>
+                              <span>Kathmandu 4600, Nepal</span>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <!-- Start Google Map -->
+                  <div class="col-md-6">
+                     <!-- Start Map -->
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.9980116807883!2d85.29291966453785!3d27.686456333017755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb184139960a61%3A0x8ee3c8d56559cd7!2sM7PW%2B5W2%2C%20Kathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2sin!4v1650090816384!5m2!1sen!2sin" width="550" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                  </div>
+                  <!-- End Google Map -->
+                  <!-- Start  contact -->
+                  <div class="col-md-6">
+                     <div class="form contact-form">
+                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                           <div class="form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                 required>
+                           </div>
+                           <div class="form-group mt-3">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                 required>
+                           </div>
+                           <div class="form-group mt-3">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                                 required>
+                           </div>
+                           <div class="form-group mt-3">
+                              <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                 required></textarea>
+                           </div>
+                           <div class="my-3">
+                              <div class="loading">Loading</div>
+                              <div class="error-message"></div>
+                              <div class="sent-message">Your message has been sent. Thank you!</div>
+                           </div>
+                           <div class="text-center"><button type="submit">Send Message</button></div>
+                        </form>
+                     </div>
+                  </div>
+                  <!-- End Left contact -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Contact Section -->
+   </main>
+   <!-- End #main -->
+   <!-- ======= Footer ======= -->
+   <footer>
+      <div class="footer-area">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="footer-content">
+                     <div class="footer-head">
+                        <div class="footer-logo">
+                           <h2><span>Who we are</span></h2>
+                        </div>
+                        <p>The best Interior Design Company  in the city having 12 + Years Experience In this Fields.
+                        </p>
+                        <div class="footer-icons">
+                           <ul>
+                              <li>
+                                 <a href="#"><i class="bi bi-facebook"></i></a>
+                              </li>
+                              <li>
+                                 <a href="#"><i class="bi bi-twitter"></i></a>
+                              </li>
+                              <li>
+                                 <a href="#"><i class="bi bi-instagram"></i></a>
+                              </li>
+                              <li>
+                                 <a href="#"><i class="bi bi-linkedin"></i></a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end single footer -->
+               <div class="col-md-4">
+                  <div class="footer-content">
+                     <div class="footer-head">
+                        <div class="footer-logo">
+                           <h2><span>What we do</span></h2>
+                        </div>
+                        <p>
+                           Planning , Designing, Structure Analysis.
+                        </p>
+                        <div class="footer-contacts">
+                           <p><a href=""><b>Architect</b></a></p>
+                           <p><a href=""><b>Interior</b></a></p>
+                           <p><a href=""><b>Smart Home</b></a></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="footer-content">
+                     <div class="footer-head">
+                        <div class="footer-logo">
+                           <h2><span>Get in Touch</span></h2>
+                        </div>
+                        <p>
+                           Feel free To message us if any services need from ratala Architecture
+                        </p>
+                        <div class="footer-contacts">
+                           <p><span>Tel:</span> +977-01-145989</p>
+                           <p><span>Email:</span> contact@example.com</p>
+                           <p><span>Working Hours:</span> 9am-5pm</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end single footer -->
+               <div class="footer-area-bottom">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                           <div class="copyright text-center">
+                              <p>
+                                 &copy; Copyright <strong>Ratala </strong>. All Rights Reserved
+                              </p>
+                           </div>
+                           <div class="credits">
+                              <!--
+                           All the links in the footer should remain intact.
+                           You can delete the links only if you purchased the pro version.
+                           Licensing information: https://bootstrapmade.com/license/
+                           Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
+                           -->
+                              Designed by <a href="https://bootstrapmade.com/">Ratala soft</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+   </footer>
+   <!-- End  Footer -->
+   <div id="preloader"></div>
+   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+         class="bi bi-arrow-up-short"></i></a>
+   <!-- Vendor JS Files -->
+   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+   <script src="assets/vendor/php-email-form/validate.js"></script>
+   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <!-- Template Main JS File -->
+   <script src="assets/js/main.js"></script>
+
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+   <script type="text/javascript">
+
+      $(".slick")
+         .on("init", () => {
+            $('.slick-slide[data-slick-index="-2"]').addClass("lt2");
+            $('.slick-slide[data-slick-index="-1"]').addClass("lt1");
+            $('.slick-slide[data-slick-index="1"]').addClass("gt1");
+            $('.slick-slide[data-slick-index="2"]').addClass("gt2");
+         })
+         .slick({
+            centerMode: true,
+            centerPadding: 0,
+            slidesToShow: 3
+         })
+         .on("beforeChange", (event, slick, current, next) => {
+            $(".slick-slide.gt2").removeClass("gt2");
+            $(".slick-slide.gt1").removeClass("gt1");
+            $(".slick-slide.lt1").removeClass("lt1");
+            $(".slick-slide.lt2").removeClass("lt2");
+
+            const lt2 = current < next && current > 0 ? current - 1 : next - 2;
+            const lt1 = current < next && current > 0 ? current : next - 1;
+            const gt1 = current < next || next === 0 ? next + 1 : current;
+            const gt2 = current < next || next === 0 ? next + 2 : current + 1;
+
+            $(`.slick-slide[data-slick-index="${lt2}"]`).addClass("lt2");
+            $(`.slick-slide[data-slick-index="${lt1}"]`).addClass("lt1");
+            $(`.slick-slide[data-slick-index="${gt1}"]`).addClass("gt1");
+            $(`.slick-slide[data-slick-index="${gt2}"]`).addClass("gt2");
+
+            // Clone processing when moving from 5 to 0
+            if (current === 5 && next === 0) {
+               $(`.slick-slide[data-slick-index="${current - 1}"]`).addClass("lt2");
+               $(`.slick-slide[data-slick-index="${current}"]`).addClass("lt1");
+               $(`.slick-slide[data-slick-index="${current + 2}"]`).addClass("gt1");
+               $(`.slick-slide[data-slick-index="${current + 3}"]`).addClass("gt2");
+            }
+
+            // Clone processing when moving from 0 to 5
+            if (current === 0 && next === 5) {
+               $(`.slick-slide[data-slick-index="${current - 1}"]`).addClass("gt2");
+               $(`.slick-slide[data-slick-index="${current}"]`).addClass("gt1");
+               $(`.slick-slide[data-slick-index="${current - 2}"]`).addClass("lt1");
+               $(`.slick-slide[data-slick-index="${current - 3}"]`).addClass("lt2");
+            }
+
+            console.log("beforeChange", current, ":", lt2, lt1, next, gt1, gt2);
+         });
+
+
+      $(function () {
+         $('.popup-youtube').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false
+         });
+      });
+
+   </script>
+
+</body>
+
+</html>
